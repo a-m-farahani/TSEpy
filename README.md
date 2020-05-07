@@ -1,7 +1,8 @@
 # TSEpy
-Tehran Stock Exchange Data Collector
+Tehran Stock Exchange Data Collector with python.
 
 A simple crawler to collect data from tsetmc.com
+
 Features:
 * List of all stock indices
 * List of all groups
