@@ -133,12 +133,10 @@ class TSE:
         )
         fig.add_trace(go.Scatter(x=S['<DTYYYYMMDD>'],y=S['<CLOSE>'],name='Price'),secondary_y=False)
         fig.add_trace(go.Bar(x=S['<DTYYYYMMDD>'],y=S['<VOL>'],name='Volume'),secondary_y=True)
-        #fig.update_yaxes(title_text="<b>primary</b> yaxis title", secondary_y=False)
-        #fig.update_yaxes(title_text="<b>secondary</b> yaxis title", secondary_y=True)
         fig.show()
 
 
-if __name__ = '__main__' :
+if __name__ == '__main__' :
     tse = TSE()
     index_id = tse.search_index_id('بن')
     data = tse.get_index_data(index_id, from_date='2019-1-1')
